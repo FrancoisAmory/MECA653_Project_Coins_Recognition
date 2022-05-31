@@ -4,7 +4,7 @@ Here is the repo for our Project - Coins recognition
   Hello,
   
 You can find here the project of François Amory, Nathan Bignon and Vincent Criscuolo.
-The idea was borned with the collection of Euro coins of one of the member of the group. After a small reflexion, the three students wanted to try to code a recognition programm of these coins, using some methods of Image processing and machine learning.
+The idea was born with the collection of Euro coins of one of the member of the group. After a small reflexion, the three students wanted to try to code a recognition programm of these coins, using some methods of Image processing and machine learning.
 During their work, they tried to use different modules of image processing like skimage or pillow, in order to detect circles, rotate the images, plot histograms, and other useful tools for this task.
 They also tried to use cv2, but it didn't work on the computer. All the attempts are in the projet653 folder.
 
