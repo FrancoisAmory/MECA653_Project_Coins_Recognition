@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # Reading and opening the picture
 
     image = Image()
-    image.load(path_to_assets + '1e.png')
+    image.load(path_to_assets + '2e_test.png')
     #image.display("Exemple d'image")
 
 
@@ -31,24 +31,26 @@ if __name__ == '__main__':
     image_localized.display("Localized Image")
     
     new_w,new_h = image_localized.W ,image_localized.H
-    print(new_w,new_h)
+    #print(new_w,new_h)
     
-    img2 = Image()
-    img2.load(path_to_assets + '1e.png')
-    h, w = img2.H, img2.W 
+    
+    
+    image2 = Image()
+    image2.load(path_to_assets + '2e_test.png')
+    h, w = image2.H, image2.W 
     
 
 
     # Resizing of the picture
 
-    image_localized2 = img2.crop(new_h, new_w)
-    image_localized2.display("Cropped Image")
+    image_cropped = image2.crop(new_h, new_w)
+    image_cropped.display("Cropped Image")
 
 
     # Reading models and recognition
 
     models_list = models_reading(path_to_assets)
-    result = coins_recognition(image, models_list,220)
+    result = coins_recognition(image_cropped, models_list,220)
     print("The coin recognized is : ", result)
 
     
